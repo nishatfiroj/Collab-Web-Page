@@ -5,6 +5,7 @@ import './CollabCard.css'
 import '@nui/plugin-react-app-shell/dist/index.css';
 import PropTypes from 'prop-types';
 import '@material/react-card/dist/card.css';
+import MaterialIcon from 'material-icons-react';
 
 import Card, {
   CardPrimaryContent,
@@ -17,24 +18,19 @@ import Card, {
 
 const CollabCard = ({ title, subtitle, msg }) => {
   return (
-    <Card>
-      <CardPrimaryContent>
-        <CardMedia square imageUrl='./my/fancy/image.png' />
-      </CardPrimaryContent>
-
-
-      <CardActions>
-        <CardActionButtons>
-          <button>Click Me</button>
-        </CardActionButtons>
-
-        <CardActionIcons>
-          <i>Click Me Too!</i>
-        </CardActionIcons>
-      </CardActions>
-    </Card>
+    <div className="collabCard">
+      <Card className="card">
+        <CardPrimaryContent>
+          <CardMedia square imageUrl='./my/fancy/image.png' />
+        </CardPrimaryContent>
+      </Card>
+      <div className="container">
+        <MaterialIcon icon="account_circle" size={28} />
+        <h3>Title</h3>
+      </div>
+    </div>
   )
-}
+};
 
 Card.propTypes = {
   title: PropTypes.string,

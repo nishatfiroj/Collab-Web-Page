@@ -10,29 +10,29 @@ import AppShell, {
   AppShellContent,
 } from '@nui/plugin-react-app-shell';
 
-const App = () => (
-  <AppShell>
+const App = () => {
+  return (
+    <AppShell>
+      {/* nav */}
+      <AppShellTopBar
+        title={<img className="logo" src={require('./Img/logo.svg')} alt="Collab Logo" />}
+        actions={[
+          <div class="icons">
+            <img src={require('./Img/account_icon.svg')} alt="Log In" />
+          </div>
+        ]}
+      />
 
-    {/* nav */}
-    <AppShellTopBar
-      title={<img className="logo" src={require('./Img/logo.svg')} alt="Collab Logo" />}
-      actions={[
-        <div class="icons">
-          <img src={require('./Img/account_icon.svg')} alt="Log In" />
-        </div>
-      ]}
-    />
+      {/* body */}
+      <AppShellBody>
+        <AppShellContent>
 
-    {/* body */}
-    <AppShellBody>
-      <AppShellContent>
+          <CollabCard></CollabCard>
 
-        <CollabCard></CollabCard>
-
-      </AppShellContent>
-    </AppShellBody>
-  </AppShell>
-
-);
+        </AppShellContent>
+      </AppShellBody>
+    </AppShell>
+  )
+};
 
 export default App;

@@ -1,3 +1,22 @@
-CollabCard {
-  max-width: 200px;
+.collabCard {
+  max-width: 325px;
+  max-height: 350px;
+}
+
+.card {
+  max-width: 260px;
+  max-height: 320px;
+}
+
+.container {
+  display: inline;
+}
+
+h3 {
+  line-height: 0%;
+  color: #0f7a86;
+}
+
+.icon {
+  color: #0f7a86;
 }
