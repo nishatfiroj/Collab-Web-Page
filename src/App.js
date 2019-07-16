@@ -1,20 +1,14 @@
 import React from 'react';
 import './App.css';
-import '@nui/desktop/dist/css/nui.min.css';
 import '@nui/material-theme/dist/index.css'
 import '@nui/desktop/src/shell';
+import CollabCard from './CollabCard.js';
 
 import AppShell, {
   AppShellTopBar,
   AppShellBody,
   AppShellContent,
 } from '@nui/plugin-react-app-shell';
-
-import {
-  Card,
-  CardContent,
-  CardImage,
-} from '@nui/desktop-react/lib'
 
 const App = () => (
   <AppShell>
@@ -32,11 +26,9 @@ const App = () => (
     {/* body */}
     <AppShellBody>
       <AppShellContent>
-        <Card>
-          <CardContent>
-            <CardImage _ref="./Img/Testing/1.jpg" />
-          </CardContent>
-        </Card>
+
+        <CollabCard></CollabCard>
+
       </AppShellContent>
     </AppShellBody>
   </AppShell>
