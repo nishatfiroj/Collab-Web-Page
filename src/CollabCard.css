@@ -1,22 +1,32 @@
 .collabCard {
-  max-width: 325px;
+  max-width: 320px;
   max-height: 350px;
+  padding-bottom: 2rem;
+}
+
+.collabCard i[favorite="favorite_border"] {
+  margin-left: auto;
 }
 
 .card {
-  max-width: 260px;
+  max-width: 320px;
   max-height: 320px;
 }
 
-.container {
-  display: inline;
+.headline {
+  display: inline-flex;
+  align-items: flex-end;
+  width: 100%;
+  padding-top: 8px;
 }
 
 h3 {
-  line-height: 0%;
+  line-height: 0px;
   color: #0f7a86;
+  padding-left: 12px;
+  font-size: 14px;
 }
 
-.icon {
-  color: #0f7a86;
+.favorite {
+  margin-right: 0%;
 }

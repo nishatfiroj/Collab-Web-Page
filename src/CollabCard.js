@@ -6,33 +6,35 @@ import '@nui/plugin-react-app-shell/dist/index.css';
 import PropTypes from 'prop-types';
 import '@material/react-card/dist/card.css';
 import MaterialIcon from 'material-icons-react';
+import TextField, { HelperText, Input } from '@material/react-text-field';
+
 
 import Card, {
   CardPrimaryContent,
   CardMedia,
-  CardActions,
-  CardActionButtons,
-  CardActionIcons
 } from "@material/react-card";
-
 
 const CollabCard = ({ title, subtitle, msg }) => {
   return (
     <div className="collabCard">
+
       <Card className="card">
         <CardPrimaryContent>
-          <CardMedia square imageUrl='./my/fancy/image.png' />
+          <CardMedia square imageUrl='./test.png' />
         </CardPrimaryContent>
       </Card>
-      <div className="container">
-        <MaterialIcon icon="account_circle" size={28} />
-        <h3>Title</h3>
-      </div>
+
+      {/* Headline of Collab Card */}
+      <span className="headline">
+        <MaterialIcon icon="account_circle" size={24} color="#0f7a86" />
+        <h3>{title}</h3>
+        <MaterialIcon icon="favorite_border" size={24} color="#0f7a86" favorite="favorite_border" />
+      </span>
     </div>
   )
 };
 
-Card.propTypes = {
+CollabCard.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   msg: PropTypes.string,
