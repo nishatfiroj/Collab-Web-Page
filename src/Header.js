@@ -20,7 +20,8 @@ const Header = () => {
         <div className="top-nav-bar">
           <img className="logo" src={require('./Img/logo.svg')} alt="Collab Logo" />
           <div class="icons">
-            <Button outlined="true">Upload</Button>
+            <Button className="upload" outlined="true" icon={<div><MaterialIcon icon="cloud_upload" color="#0f7a86" /></div>}>Upload</Button>
+
             <MaterialIcon icon="account_circle" size={32} color="#0f7a86" />
           </div>
         </div>

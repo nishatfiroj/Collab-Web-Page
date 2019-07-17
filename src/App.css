@@ -42,3 +42,11 @@ body {
 .top-nav-bar {
   padding-bottom: 1rem;
 }
+
+.upload {
+  padding-right: 11rem;
+}
+
+.top-nav-bar i[icon="cloud_upload"] {
+  padding-right: 1rem;
+}
