@@ -22,19 +22,12 @@ const App = () => {
         </Header>
         <Grid>
           <Row>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
-          </Row>
-          <Row>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
-          </Row>
-          <Row>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
-            <Cell columns={3}><CollabCard title="Title"></CollabCard></Cell>
+            <Cell><CollabCard title="Title"></CollabCard></Cell>
+            <Cell><CollabCard title="Title"></CollabCard></Cell>
+            <Cell><CollabCard title="Title"></CollabCard></Cell>
+            <Cell><CollabCard title="Title"></CollabCard></Cell>
+            <Cell><CollabCard title="Title"></CollabCard></Cell>
+            <Cell><CollabCard title="Title"></CollabCard></Cell>
           </Row>
         </Grid>
       </body>

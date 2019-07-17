@@ -7,19 +7,37 @@ import '@material/react-card/dist/card.css';
 import MaterialIcon from 'material-icons-react';
 import Button from '@material/react-button';
 
+import {
+  Cell,
+  Grid,
+  Row,
+} from '@material/react-layout-grid';
+
 const Header = () => {
   return (
-    <div className="Header">
-      <img className="logo" src={require('./Img/logo.svg')} alt="Collab Logo" />
-      <div class="icons">
-        <MaterialIcon icon="account_circle" size={28} color="#0f7a86" />
+    <div>
+      <div className="head">
+        <div className="top-nav-bar">
+          <img className="logo" src={require('./Img/logo.svg')} alt="Collab Logo" />
+          <div class="icons">
+            <Button outlined="true">Upload</Button>
+            <MaterialIcon icon="account_circle" size={32} color="#0f7a86" />
+          </div>
+        </div>
+        <div className="bottom-nav-bar">
+          <Grid>
+            <Row>
+              <Cell columns={2}><Button>All</Button></Cell>
+              <Cell columns={2}><Button>Retail</Button></Cell>
+              <Cell columns={2}><Button>Platform</Button></Cell>
+              <Cell columns={2}><Button>NUI</Button></Cell>
+              <Cell columns={2}><Button>Finance</Button></Cell>
+              <Cell columns={2}><Button>Hospitality</Button></Cell>
+            </Row>
+          </Grid>
+        </div>
       </div>
-      <div className="nav-bar">
-        <Button>asdf</Button>
-        <Button>fdas</Button>
-        <Button>dsda</Button>
-        <Button>ffff</Button>
-      </div>
+
     </div>
   )
 };

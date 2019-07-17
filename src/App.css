@@ -3,22 +3,21 @@
   background-color: #fafafa;
 }
 
-.body {
+body {
   background-color: #fafafa;
+  vertical-align: middle;
 }
 
-.Header {
-  height: 50px;
+.head {
+  height: 60px;
   background-color: white;
   color: #0f7a86;
   font-size: 30px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0.1),
-    0 1px 5px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05),
+    0 3px 1px -2px rgba(194, 141, 141, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-
-  width: 100%;
-  margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem 3rem 2.5rem 3rem;
+  position: relative;
 }
 
 .logo {
@@ -27,13 +26,19 @@
 }
 
 .icons {
-  float: center;
+  float: right;
+  display: inline-flex;
+  align-items: flex-end;
 }
 
 .container {
   display: inline;
 }
 
-.nav-bar {
-  width: 100%;
+.bottom-nav-bar {
+  padding-top: 1rem;
+}
+
+.top-nav-bar {
+  padding-bottom: 1rem;
 }
