@@ -16,7 +16,7 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05),
     0 3px 1px -2px rgba(194, 141, 141, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  padding: 2rem 3rem 2.5rem 3rem;
+  padding: 2rem 3rem 3.5rem 3rem;
   position: relative;
 }
 
@@ -32,11 +32,11 @@ body {
 }
 
 .container {
-  display: inline;
+  align-items: center;
 }
 
 .bottom-nav-bar {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .top-nav-bar {
@@ -44,9 +44,18 @@ body {
 }
 
 .upload {
-  padding-right: 11rem;
+  padding-right: 1rem;
+  background-color: #0f7a86;
 }
 
 .top-nav-bar i[icon="cloud_upload"] {
   padding-right: 1rem;
+}
+
+.mdc-button-filled-accessible [container-fill-color] {
+  color: #0f7a86;
+}
+
+.outlinedPrimary {
+  color: #0f7a86;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import '@nui/material-theme/dist/index.css'
 import './CollabCard.css'
 import '@nui/plugin-react-app-shell/dist/index.css';
@@ -18,7 +18,7 @@ const CollabCard = ({ title, subtitle, msg }) => {
 
       <Card className="card">
         <CardPrimaryContent>
-          <CardMedia square imageUrl='./test.png' />
+          <CardMedia square imageUrl="./test.png" />
         </CardPrimaryContent>
       </Card>
 

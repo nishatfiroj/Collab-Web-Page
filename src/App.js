@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import '@nui/material-theme/dist/index.css'
 import '@nui/desktop/src/shell';
-import CollabCard from './CollabCard.js';
-import Header from './Header.js';
+import CollabCard from './CollabCard/CollabCard.js';
+import Header from './Header/Header.js';
 
 import {
   Cell,
@@ -20,16 +20,19 @@ const App = () => {
         <Header>
 
         </Header>
-        <Grid>
-          <Row>
-            <Cell><CollabCard title="Title"></CollabCard></Cell>
-            <Cell><CollabCard title="Title"></CollabCard></Cell>
-            <Cell><CollabCard title="Title"></CollabCard></Cell>
-            <Cell><CollabCard title="Title"></CollabCard></Cell>
-            <Cell><CollabCard title="Title"></CollabCard></Cell>
-            <Cell><CollabCard title="Title"></CollabCard></Cell>
-          </Row>
-        </Grid>
+        <div className="container">
+          <Grid>
+            <Row>
+              <Cell><CollabCard title="Title"></CollabCard></Cell>
+              <Cell><CollabCard title="Title"></CollabCard></Cell>
+              <Cell><CollabCard title="Title"></CollabCard></Cell>
+              <Cell><CollabCard title="Title"></CollabCard></Cell>
+              <Cell><CollabCard title="Title"></CollabCard></Cell>
+              <Cell><CollabCard title="Title"></CollabCard></Cell>
+            </Row>
+          </Grid>
+        </div>
+
       </body>
 
     </div>

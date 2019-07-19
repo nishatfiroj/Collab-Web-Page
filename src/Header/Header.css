@@ -1,18 +1,3 @@
-.collabCard {
-  max-width: 320px;
-  max-height: 350px;
-  padding: 1rem 0.5rem 1.5rem 0.5rem;
-}
-
-.collabCard i[favorite="favorite_border"] {
-  margin-left: auto;
-}
-
-.card {
-  max-width: 320px;
-  max-height: 320px;
-}
-
 .headline {
   display: inline-flex;
   align-items: flex-end;
