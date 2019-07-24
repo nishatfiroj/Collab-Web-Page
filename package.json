@@ -15,10 +15,12 @@
     "@nui/plugin-react-app-shell": "^0.1.33",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "filepond": "^4.4.11",
     "material-design-icons": "^3.0.1",
     "material-icons-react": "^1.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-filepond": "^7.0.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
