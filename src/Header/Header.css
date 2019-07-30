@@ -75,3 +75,12 @@ body {
 .nav-bar-text {
   color: #0f7a86;
 }
+
+h5 {
+  text-align: center;
+  line-height: 0%;
+}
+
+.aligned {
+  text-align: center;
+}

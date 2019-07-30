@@ -6,6 +6,7 @@ import '@nui/plugin-react-app-shell/dist/index.css';
 import PropTypes from 'prop-types';
 import '@material/react-card/dist/card.css';
 import MaterialIcon from 'material-icons-react';
+import { makeStyles } from '@material-ui/core/styles';
 
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -19,9 +20,14 @@ import Card, {
   CardMedia,
 } from "@material/react-card";
 
+const useStyles = makeStyles({
+  root: {
+    padding: '0rem 5rem 0rem 5rem',
+  }
+});
 
-
-const CollabCard = ({ title, msg, source }) => {
+const CollabCard = ({ title, msg, source, author }) => {
+  const classes = useStyles();
 
   const [open, setOpen] = React.useState(false);
 
@@ -55,8 +61,11 @@ const CollabCard = ({ title, msg, source }) => {
       </span>
 
       {/* Dialog that opens up */}
-      <Dialog open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
-        <DialogTitle id="alert-dialog-title">{title}</DialogTitle>
+      <Dialog classes={{ root: classes.root, }} open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description" className="dialog">
+        <DialogTitle id="alert-dialog-title">
+          <h2>{title}</h2>
+          <h4>{author}</h4>
+        </DialogTitle>
 
         <DialogContent children className="dialog" >
           <Card>
@@ -64,7 +73,7 @@ const CollabCard = ({ title, msg, source }) => {
               <CardMedia className="dialogCard" square imageUrl={source} />
             </CardPrimaryContent>
           </Card>
-          <DialogContentText id="alert-dialog-description">{msg}</DialogContentText>
+          <DialogContentText id="alert-dialog-description"><p>{msg}</p></DialogContentText>
         </DialogContent>
 
         <DialogActions>

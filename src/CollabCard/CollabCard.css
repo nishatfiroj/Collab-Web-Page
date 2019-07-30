@@ -26,15 +26,22 @@ h3 {
   font-size: 14px;
 }
 
+h2,
+h4 {
+  line-height: 50%;
+}
+
 .favorite {
   margin-right: 0%;
 }
 
 .dialogCard {
   width: 500px;
+  padding: 0 rem 10rem 0rem 10rem;
   /* height: 700px; */
 }
 
 .dialog {
-  max-width: 500px;
+  /* max-width: 500px; */
+  padding: 0 rem 10rem 0rem 10rem;
 }
