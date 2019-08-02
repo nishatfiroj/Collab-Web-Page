@@ -53,12 +53,14 @@ const CollabCard = ({ title, msg, source, author }) => {
         </CardPrimaryContent>
       </Card>
 
+
       {/* Headline of Collab Card */}
       <span className="headline">
         <MaterialIcon icon="account_circle" size={24} color="#0f7a86" />
         <h3>{title}</h3>
         <MaterialIcon icon="favorite_border" size={24} color="#0f7a86" favorite="favorite_border" />
       </span>
+
 
       {/* Dialog that opens up */}
       <Dialog classes={{ root: classes.root, }} open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description" className="dialog">

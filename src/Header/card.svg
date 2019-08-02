@@ -1,0 +1,36 @@
+
+<svg width="514px" height="530px" viewBox="0 0 514 530" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="514" height="530" rx="4"></rect>
+        <path d="M120.9375,62.75 C116.6875,41.1875 97.75,25 75,25 C56.9375,25 41.25,35.25 33.4375,50.25 C14.625,52.25 0,68.1875 0,87.5 C0,108.1875 16.8125,125 37.5,125 L118.75,125 C136,125 150,111 150,93.75 C150,77.25 137.1875,63.875 120.9375,62.75 Z M87.5,81.25 L87.5,106.25 L62.5,106.25 L62.5,81.25 L43.75,81.25 L75,50 L106.25,81.25 L87.5,81.25 Z" id="path-3"></path>
+    </defs>
+    <g id="Prototyping" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Upload-Page" transform="translate(-400.000000, -368.000000)">
+            <g id="Group-3" transform="translate(400.000000, 368.000000)">
+                <g id="Group">
+                    <g id="Cards-/-Surface">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Elevation" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect id="Container-Color" fill="#FFFFFF" fill-rule="evenodd" mask="url(#mask-2)" x="0" y="0" width="514" height="530" rx="4"></rect>
+                    </g>
+                </g>
+                <g id="Group-2" transform="translate(107.000000, 160.000000)">
+                    <g id="icon/file/cloud_upload_24px" transform="translate(74.949833, 0.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use fill="#008D9B" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <text id="Or-Click-Here-to-Bro" font-family="Roboto-Regular, Roboto" font-size="20" font-weight="normal" line-spacing="28" letter-spacing="0.625" fill="#000000" fill-opacity="0.7">
+                        <tspan x="13.7294922" y="236">Or Click Here to Browse Files</tspan>
+                    </text>
+                    <text id="Drop-your-files-here" font-family="OpenSans-Bold, Open Sans" font-size="22" font-weight="bold" letter-spacing="2" fill="#0F7A86">
+                        <tspan x="0" y="194">DROP YOUR FILES HERE</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
